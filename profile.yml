@@ -7,3 +7,4 @@ Actors:
     Pattern: 紲星.*?_
   - Layer: 4
     Pattern: 葵.*?_
+    #Target: Name #パターンマッチングに何を使用するか決定します。Nameでファイル名,　Textでテキストの内容。既定値はNameです
