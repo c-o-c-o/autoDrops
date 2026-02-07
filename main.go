@@ -65,6 +65,11 @@ func appfunc(c *cli.Context) error {
 		return err
 	}
 
+	client := profile.Client
+	if client == "" {
+		client = "cdrops.exe"
+	}
+
 	cmds, err := getCommand(profile, c.Path("text"), c.Args().Slice())
 	if err != nil {
 		return err
@@ -75,7 +80,7 @@ func appfunc(c *cli.Context) error {
 		return err
 	}
 
-	inst := exec.Command(filepath.Join(edr, "cdrops.exe"), cmds...)
+	inst := exec.Command(filepath.Join(edr, client), cmds...)
 	inst.SysProcAttr = &syscall.SysProcAttr{
 		HideWindow: true,
 	}

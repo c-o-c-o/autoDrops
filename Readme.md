@@ -1,9 +1,12 @@
 # CDrops
+
 プロファイルに従ってコマンドライン形式でaviutl上にファイルをドロップするアプリです  
-ごちゃまぜドロップスAPIを使用しているため、できるだけ新しいバージョンを使用してください  
+ごちゃまぜドロップスAPIを使用しているため、できるだけ新しいバージョンを使用してください
 
 # 使い方
-autoDrop.exe と同じ階層に [cdrop.exe](https://github.com/c-o-c-o/cdrops) を置いてください
+
+autoDrop.exe と同じ階層に [cdrop.exe / cdrops2.exe](https://github.com/c-o-c-o/cdrops) を置いてください。利用するクライアントは `Profile.yml` 内の `Client` で切り替えられます（未指定時は従来通り `cdrops.exe`）。
+
 ```
 
 autoDrop.exe [option] [filelist]
@@ -16,11 +19,12 @@ filelist
 
 ```
 example
-  autoDrop.exe -t セリフ.txt セリフ.wav セリフ.txt  
+  autoDrop.exe -t セリフ.txt セリフ.wav セリフ.txt
 ```
 
 # Licence
-This software is released under the MIT License, see LICENSE.  
+
+This software is released under the MIT License, see LICENSE.
 
 ごちゃまぜドロップス  
 https://github.com/oov/aviutl_gcmzdrops
